@@ -7,7 +7,7 @@ public class StartScreen : MonoBehaviour
 {
     public void PlayGame(){
 
-        SceneManager.LoadSceneAsync("Play Now");
+        SceneManager.LoadSceneAsync("Log In");
     
     }
 }
