@@ -1506,8 +1506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72.8, y: -392}
-  m_SizeDelta: {x: 193.1529, y: 50}
+  m_AnchoredPosition: {x: 148.64908, y: -392}
+  m_SizeDelta: {x: 178.4512, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281528854
 MonoBehaviour:
@@ -1527,8 +1527,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1281528857}
-          m_TargetAssemblyTypeName: SwitchToSignup, Assembly-CSharp
-          m_MethodName: SwitchToSignupScene
+          m_TargetAssemblyTypeName: Navigator, Assembly-CSharp
+          m_MethodName: GoToSignupScreen
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 4.564728, z: -407.52747, w: 0}
+  m_margin: {x: 0, y: 4.564728, z: 6.601898, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1281528851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42d33ed4a70d0794994ddaf5943c6d21, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b88aad0c7d86c46bbec27db59c9839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1545341524
@@ -2175,6 +2175,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654369348}
   m_CullTransparentMesh: 1
+--- !u!1 &1840065582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1840065583}
+  m_Layer: 0
+  m_Name: FirebaseController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1840065583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840065582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 312.60187, y: 313.67795, z: -12.198815}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949416131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,3 +2522,4 @@ SceneRoots:
   - {fileID: 1153440190}
   - {fileID: 1545341528}
   - {fileID: 125127570}
+  - {fileID: 1840065583}
