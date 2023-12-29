@@ -202,7 +202,6 @@ GameObject:
   - component: {fileID: 1052251582}
   - component: {fileID: 1052251581}
   - component: {fileID: 1052251580}
-  - component: {fileID: 1052251583}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -284,18 +283,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1052251583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052251579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20905e27ed42aed4790879c6fecb03fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1236537101
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +547,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1828692991}
-        m_TargetAssemblyTypeName: Navigator, Assembly-CSharp
+        m_TargetAssemblyTypeName: MyNavigator.Navigator, Assembly-CSharp
         m_MethodName: GoToLoginScreen
         m_Mode: 1
         m_Arguments:
