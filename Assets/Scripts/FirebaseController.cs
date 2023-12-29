@@ -4,11 +4,12 @@ using UnityEngine;
 using MyNavigator;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class FirebaseController : MonoBehaviour
 {
 
-    public InputField loginEmail, loginPassword, signupEmail, signupPassword, signupConfirmPassword;
+    public TMP_InputField loginEmail, loginPassword, signupEmail, signupPassword, signupConfirmPassword;
 
     public void LoginUser(){
 
