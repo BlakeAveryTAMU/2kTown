@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Play Now.unity
     guid: 6d8021d70ff61f2488ab081110f93f94
+  - enabled: 1
+    path: Assets/Scenes/Log In.unity
+    guid: b7aaba4e3c68cd4448dcea7aadf87316
+  - enabled: 1
+    path: Assets/Scenes/Signup.unity
+    guid: 6c71e758c518b7842aaef4a240e146a8
   m_configObjects: {}
