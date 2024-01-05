@@ -1962,7 +1962,7 @@ GameObject:
   - component: {fileID: 1131207589}
   - component: {fileID: 1131207588}
   m_Layer: 0
-  m_Name: FirebaseController
+  m_Name: SignInController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,7 +7,7 @@ using System;
 using TMPro;
 using UnityEngine.Tilemaps;
 
-public class FirebaseController : MonoBehaviour
+public class LogInController : MonoBehaviour
 {
 
     public TMP_InputField loginEmail, loginPassword, signupEmail, signupPassword, signupConfirmPassword;
