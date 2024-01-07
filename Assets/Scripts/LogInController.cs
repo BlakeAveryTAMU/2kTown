@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System;
 using TMPro;
 using UnityEngine.Tilemaps;
+using UnityEngine.Networking;
 
 public class LogInController : MonoBehaviour
 {
@@ -34,6 +35,40 @@ public class LogInController : MonoBehaviour
         }
 
         // Do sign up, then have a pop up that redirects to login
+
+    }
+
+    private IEnumerator SendSignupRequest(string email, string password, int team_id)
+    {
+        var requestData = new
+        {
+            email = email,
+            password = password,
+            team_id = team_id
+        };
+
+        // Convert to JSON
+        string json = JsonUtility.ToJson(requestData);
+
+        // Create a UnityWebRequest for posting the JSON data
+        using (UnityWebRequest www = UnityWebRequest.Post("https://twoktownserver.onrender.com/api/add_user", json))
+        {
+            www.SetRequestHeader("Content-Type", "application/json");
+
+            // Send the request and wait for a response
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                showErrorPopup("Error", www.error);
+            }
+            else
+            {
+                // Handle the response data (www.downloadHandler.text)
+                Debug.Log("Signup response: " + www.downloadHandler.text);
+                // Add logic to handle successful signup
+            }
+        }
     }
 
     private void showErrorPopup(string title, string message){
